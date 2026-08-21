@@ -25,4 +25,3 @@ fi
 chmod 600 $NETPLAN_FILE
 netplan generate
 netplan apply
-echo "Netplan disinkronkan. Mode: $( [ -n "$PHYSICAL_INTERFACE_EXPAND" ] && [ "$PHYSICAL_INTERFACE_EXPAND" != "false" ] && echo 'Dual Port (Input + Expand)' || echo 'Single Port (Input Only)' )"

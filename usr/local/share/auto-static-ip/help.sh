@@ -1,11 +1,8 @@
 #!/bin/bash
 echo "================================================================="
-echo "       AUTO-STATIC-IP & OVS MANAGER (v0.0.0.1-beta)"
+echo "       AUTO-STATIC-IP MANAGER (v0.0.0.2-beta)"
 echo "================================================================="
-echo "Aplikasi pengelola DHCP-ke-Statis untuk Node/Host Ubuntu."
-echo ""
-echo "PENGGUNAAN:"
-echo "  auto-static-ip [perintah]"
+echo "Pengelola DHCP-ke-Statis Universal untuk Node/Host Ubuntu."
 echo ""
 echo "PERINTAH YANG TERSEDIA:"
 echo "  start     : Menangkap IP dari DHCP ke systemd-networkd."

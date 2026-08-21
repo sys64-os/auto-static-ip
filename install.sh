@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Menginstal Auto-Static-IP (v0.0.0.1-beta)..."
+echo "Menginstal Auto-Static-IP (v0.0.0.2-beta)..."
 cp -r etc/* /etc/
 cp -r usr/* /usr/
 chmod +x /usr/bin/auto-static-ip

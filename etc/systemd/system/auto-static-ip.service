@@ -1,5 +1,5 @@
 [Unit]
-Description=Konfigurasi DHCP-to-Static Open vSwitch
+Description=Konfigurasi Universal DHCP-to-Static
 Wants=network-pre.target
 After=local-fs.target openvswitch-switch.service
 Before=network-pre.target systemd-networkd.service
