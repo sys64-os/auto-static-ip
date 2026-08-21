@@ -72,8 +72,3 @@ SEARCH_DOMAIN="localhost.local"    # Domain resolusi lokal
 * **`auto-static-ip info`** : Melihat status layanan jaringan, *interface* aktif, dan mode OVS.
 * **`auto-static-ip help`** : Menampilkan menu panduan.
 
-```
-
-Dengan tambahan versi 0.0.0.2-beta ini, *script* Anda resmi menjadi alat jaringan multi-fungsi yang sangat adaptif. Apakah Anda berencana untuk mempublikasikan *script* ini ke repositori publik seperti GitHub di kemudian hari?
-
-```
