@@ -1,0 +1,9 @@
+#!/bin/bash
+BASE_DIR="/usr/local/share/auto-static-ip"
+case "$1" in
+    start)    $BASE_DIR/auto-static-ip.sh ;;
+    trigger)  $BASE_DIR/hotplug-trigger.sh "$2" ;;
+    sync)     $BASE_DIR/sync-netplan.sh ;;
+    info)     $BASE_DIR/detect-network-system.sh ;;
+    help|*)   $BASE_DIR/help.sh ;;
+esac
