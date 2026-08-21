@@ -12,6 +12,23 @@ Versi **0.0.0.2-beta** menghadirkan fitur **OVS Bypass**. Anda kini dapat menggu
 4. **Single Source of Truth (SSOT):** Semua pengaturan port dan domain terpusat di `/etc/interface.conf`.
 5. **Generator Environment File:** Menghasilkan file `/var/lib/auto-static-ip/network.env` yang memuat variabel `TARGET_INTERFACE` dan `CURRENT_IP` untuk dikonsumsi oleh layanan lain.
 
+## Skema Direktori
+
+```text
+/ (Root)
+├── etc/
+│   ├── interface.conf                           [Pusat Variabel Jaringan]
+│   ├── systemd/system/auto-static-ip.service    [Layanan Automasi]
+│   └── udev/rules.d/99-network-hotplug.rules    [Sensor Hotplug]
+├── usr/
+│   ├── bin/auto-static-ip                       [CLI Loader]
+│   └── local/share/auto-static-ip/
+│       ├── auto-static-ip.sh                    [Mesin Utama]
+│       ├── hotplug-trigger.sh                   [Filter Udev]
+│       ├── sync-netplan.sh                      [Generator Netplan OVS]
+│       ├── detect-network-system.sh             [Diagnostik Jaringan]
+│       └── help.sh                              [Panduan CLI]
+
 ## Instalasi (Paket ZIP)
 
 1. Ekstrak file zip di server target:
