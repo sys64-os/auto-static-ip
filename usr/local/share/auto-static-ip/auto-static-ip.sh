@@ -29,7 +29,7 @@ sed -i "/$HOSTNAME/d" /etc/hosts
 sed -i "/^127.0.0.1/a $IP_ADDRESS $HOSTNAME $SEARCH_DOMAIN" /etc/hosts
 sed -i "/^127.0.0.1/a $IP_DC $FQDN_DC dc" /etc/hosts
 
-cat <<EONET> /etc/systemd/network/10-static-$INTERFACE.network
+cat <<EONET > /etc/systemd/network/10-static-$INTERFACE.network
 [Match]
 Name=$INTERFACE
 
@@ -47,13 +47,14 @@ ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
 
 mkdir -p /var/lib/auto-static-ip
 ENV_FILE="/var/lib/auto-static-ip/network.env"
-cat <<EOENV> $ENV_FILE
+cat <<EOENV > $ENV_FILE
 CURRENT_IP="$IP_ADDRESS"
 CURRENT_CIDR="$IP_CIDR"
 CURRENT_GATEWAY="$GATEWAY"
 CURRENT_DC_IP="$IP_DC"
 OVS_BRIDGE="$INTERFACE"
 PHYSICAL_INTERFACE_IN="$PHYSICAL_INTERFACE_IN"
+PHYSICAL_INTERFACE_EXPAND="$PHYSICAL_INTERFACE_EXPAND"
 SEARCH_DOMAIN="$SEARCH_DOMAIN"
 FQDN_DC="$FQDN_DC"
 EOENV

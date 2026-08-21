@@ -5,5 +5,10 @@ case "$1" in
     trigger)  $BASE_DIR/hotplug-trigger.sh "$2" ;;
     sync)     $BASE_DIR/sync-netplan.sh ;;
     info)     $BASE_DIR/detect-network-system.sh ;;
-    help|*)   $BASE_DIR/help.sh ;;
+    help|--help|-h|"") $BASE_DIR/help.sh ;;
+    *)
+        echo "Perintah tidak dikenali: $1"
+        echo "Ketik 'auto-static-ip help' untuk melihat panduan."
+        exit 1
+        ;;
 esac

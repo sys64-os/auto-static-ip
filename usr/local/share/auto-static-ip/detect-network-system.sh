@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "=== DIAGNOSTIK JARINGAN SERVER ==="
+echo "=== DIAGNOSTIK JARINGAN SERVER (v0.0.0.1-beta) ==="
 systemctl is-active --quiet systemd-networkd && echo "[+] systemd-networkd : AKTIF"
 systemctl is-active --quiet systemd-resolved && echo "[+] systemd-resolved : AKTIF"
 echo "[*] DNS Rujukan:" && grep '^nameserver' /etc/resolv.conf

@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Menginstal Auto-Static-IP..."
+echo "Menginstal Auto-Static-IP (v0.0.0.1-beta)..."
 cp -r etc/* /etc/
 cp -r usr/* /usr/
 chmod +x /usr/bin/auto-static-ip
@@ -8,4 +8,4 @@ systemctl daemon-reload
 systemctl enable auto-static-ip.service
 udevadm control --reload-rules
 udevadm trigger
-echo "Instalasi Selesai! Ketik 'auto-static-ip help' untuk mulai."
+echo "Instalasi Selesai! Ketik 'auto-static-ip help' untuk panduan."
