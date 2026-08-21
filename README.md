@@ -54,7 +54,7 @@ Sesuaikan variabel berikut sesuai dengan perangkat keras dan kebutuhan topologi 
 PHYSICAL_INTERFACE_IN="enp1s0"        # Port sumber internet/DHCP
 
 # Kosongkan atau isi "false" jika hanya 1 port LAN
-PHYSICAL_INTERFACE_EXPAND=""          
+PHYSICAL_INTERFACE_EXPAND="false"          
 
 # Kosongkan atau isi "false" jika TIDAK menggunakan Open vSwitch
 OVS_BRIDGE="ovsbr0"                   
