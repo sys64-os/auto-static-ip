@@ -17,7 +17,7 @@ PHYSICAL_INTERFACE_IN="enp1s0"
 # Biarkan kosong ("") atau isi "false" jika server hanya memiliki 1 port LAN
 PHYSICAL_INTERFACE_EXPAND=""
 OVS_BRIDGE="ovsbr0"
-SEARCH_DOMAIN="meaningfrost.my.id"
+SEARCH_DOMAIN="localhost.local"
 EOF
 
 # 2. /usr/bin/auto-static-ip (CLI Loader dengan perintah Help)

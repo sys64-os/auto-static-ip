@@ -59,7 +59,7 @@ PHYSICAL_INTERFACE_EXPAND=""
 # Kosongkan atau isi "false" jika TIDAK menggunakan Open vSwitch
 OVS_BRIDGE="ovsbr0"                   
 
-SEARCH_DOMAIN="meaningfrost.my.id"    # Domain resolusi lokal
+SEARCH_DOMAIN="localhost.local"    # Domain resolusi lokal
 
 ```
 
